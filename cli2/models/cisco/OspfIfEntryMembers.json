@@ -1,0 +1,44 @@
+{
+  "listattrs": [],
+  "commands": {
+    "AddressLessIf": {
+      "cliname": "ethernet"
+    }, 
+    "IfRetransInterval": {
+      "cliname": "retransmit_interval"
+    }, 
+    "IfType": {
+      "cliname": "iftype"
+    }, 
+    "IfIpAddress": {
+      "cliname": "ospf"
+    }, 
+    "IfAdminStat": {
+      "cliname": "admin_state"
+    }, 
+    "IfAuthKey": {
+      "cliname": "authkey"
+    }, 
+    "IfRtrPriority": {
+      "cliname": "priority"
+    },
+    "IfAreaId": {
+      "cliname": "area"
+    },
+    "IfPollInterval": {
+      "cliname": "poll_interval"
+    }, 
+    "IfAuthType": {
+      "cliname": "auth_type"
+    }, 
+    "IfHelloInterval": {
+      "cliname": "hello_interval"
+    }, 
+    "IfTransitDelay": {
+      "cliname": "transit_delay"
+    }, 
+    "IfRtrDeadInterval": {
+      "cliname": "rtr_dead_interval"
+    }
+  }
+}

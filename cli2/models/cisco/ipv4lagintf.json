@@ -1,0 +1,11 @@
+{
+  "ipv4lagintf": {
+    "cliname": "ip",
+    "commands": {
+      "subcmd1": {
+        "$ref": "file:/tmp/snaproute/cli/model/cisco/ipv4lagintfmembers.json"
+      }
+    },
+    "help": "Configure Ip Features"
+  }
+}

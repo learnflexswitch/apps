@@ -1,0 +1,26 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "AdminState": {
+      "cliname": "admin_state"
+    }, 
+    "LagType": {
+      "cliname": "lagtype"
+    }, 
+    "IntfRef": {
+      "cliname": "port_channel"
+    }, 
+    "SystemPriority": {
+      "cliname": "system_priority"
+    }, 
+    "Interval": {
+      "cliname": "interval"
+    }, 
+    "LacpMode": {
+      "cliname": "lacp_mode"
+    }, 
+    "LagHash": {
+      "cliname": "lag_hash"
+    }
+  }
+}

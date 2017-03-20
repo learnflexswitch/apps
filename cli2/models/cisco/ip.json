@@ -1,0 +1,16 @@
+{
+  "ip": {
+    "cliname" : "ip",
+    "commands": {
+      "subcmd1" : {
+        "$ref": "file:/tmp/snaproute/cli/model/cisco/DhcpRelayGlobal.json"
+      },
+      "subcmd2" : {
+        "$ref" : "file:/tmp/snaproute/cli/model/cisco/IPv4Route.json"
+      },
+      "subcmd3": {
+        "$ref" : "file:/tmp/snaproute/cli/model/cisco/IpTableAcl.json"
+      }
+    }
+  }
+}

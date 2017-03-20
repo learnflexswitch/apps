@@ -1,0 +1,15 @@
+{
+  "svi": {
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/svisubcmds.json"
+    },
+    "cliname": "vlan",
+    "help": "Vlan Interface Comamnds",
+    "prompt": "vlan",
+    "value": {
+      "IntfRef": {
+        "cliname": "vlan"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "style": "snap",
+  "prompt": ">",
+  "version": "1.0.0",
+  "commands": {
+    "privilege": {
+      "prompt": "#",
+      "cliname": "enable"
+    },
+    "subcmd1" : {
+      "$ref" : "file:/tmp/snaproute/cli/model/cisco/config.json"
+    },
+    "subcmd2" : {
+      "$ref" : "file:/tmp/snaproute/cli/model/cisco/show.json"
+    }
+  }
+}

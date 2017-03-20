@@ -1,0 +1,18 @@
+{
+  "temperaturesensorpmdatastate": {
+    "cliname": "temperaturesensorpmdata", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/TemperatureSensorPMDataStateSubCmds.json"
+    }, 
+    "help": "Show TemperatureSensorPMDataState Info", 
+    "prompt": "", 
+    "value": {
+      "Class": {
+        "cliname": "temperaturesensorpmdata"
+      }, 
+      "Name": {
+        "cliname": "name"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "vlanstate": {
+    "cliname": "vlan", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/VlanStateSubCmds.json"
+    }, 
+    "help": "Show Vlan", 
+    "prompt": "", 
+    "value": {
+      "VlanId": {
+        "cliname": "vlan"
+      }
+    }
+  }
+}

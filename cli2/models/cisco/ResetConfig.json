@@ -1,0 +1,9 @@
+{
+  "resetconfig": {
+    "cliname": "", 
+    "commands": {}, 
+    "help": "Config ResetConfig Info", 
+    "prompt": "", 
+    "value": {}
+  }
+}

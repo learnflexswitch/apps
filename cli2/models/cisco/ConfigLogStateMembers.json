@@ -1,0 +1,14 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "SeqNum": {
+      "cliname": "SeqNum"
+    }, 
+    "API": {
+      "cliname": "API"
+    }, 
+    "Time": {
+      "cliname": "Time"
+    }
+  }
+}

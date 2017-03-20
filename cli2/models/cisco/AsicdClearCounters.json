@@ -1,0 +1,9 @@
+{
+  "asicdclearcounters": {
+    "cliname": "", 
+    "commands": {}, 
+    "help": "Config AsicdClearCounters Info", 
+    "prompt": "", 
+    "value": {}
+  }
+}

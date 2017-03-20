@@ -1,0 +1,10 @@
+{
+  "notifierenable": {
+    "cliname": "notifierenable", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/NotifierEnableSubCmds.json"
+    }, 
+    "help": "Config NotifierEnable Info", 
+    "prompt": "",
+  }
+}

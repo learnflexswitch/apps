@@ -1,0 +1,21 @@
+{
+  "configlogstate": {
+    "cliname": "configlog", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/ConfigLogStateSubCmds.json"
+    }, 
+    "help": "Show ConfigLogState Info", 
+    "prompt": "", 
+    "value": {
+      "API": {
+        "cliname": "api"
+      }, 
+      "SeqNum": {
+        "cliname": "configlog"
+      }, 
+      "Time": {
+        "cliname": "time"
+      }
+    }
+  }
+}

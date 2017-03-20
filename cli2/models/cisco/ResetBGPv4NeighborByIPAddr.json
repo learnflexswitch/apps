@@ -1,0 +1,9 @@
+{
+  "resetbgpv4neighborbyipaddr": {
+    "cliname": "", 
+    "commands": {}, 
+    "help": "Config ResetBGPv4NeighborByIPAddr Info", 
+    "prompt": "", 
+    "value": {}
+  }
+}

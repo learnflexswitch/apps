@@ -1,0 +1,14 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "NextHopIntRef": {
+      "cliname": "nexthopintref"
+    }, 
+    "NextHopIp": {
+      "cliname": "nexthop_ip"
+    }, 
+    "Weight": {
+      "cliname": "weight"
+    }
+  }
+}

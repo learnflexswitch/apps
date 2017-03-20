@@ -1,0 +1,15 @@
+{
+  "bfdglobalstate": {
+    "cliname": "global", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/BfdGlobalStateSubCmds.json"
+    }, 
+    "help": "Show BfdGlobalState Info", 
+    "prompt": "", 
+    "value": {
+      "Vrf": {
+        "cliname": "global"
+      }
+    }
+  }
+}

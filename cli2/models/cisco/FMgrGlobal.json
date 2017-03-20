@@ -1,0 +1,10 @@
+{
+  "fmgrglobal": {
+    "cliname": "fmgrglobal", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/FMgrGlobalSubCmds.json"
+    }, 
+    "help": "Config FMgrGlobal Info", 
+    "prompt": "",
+  }
+}

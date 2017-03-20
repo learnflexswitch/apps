@@ -1,0 +1,15 @@
+{
+  "vxlaninstance": {
+    "cliname": "vni", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/VxlanInstanceSubCmds.json"
+    }, 
+    "help": "Config VxlanInstance Info", 
+    "prompt": "", 
+    "value": {
+      "Vni": {
+        "cliname": "vni"
+      }
+    }
+  }
+}

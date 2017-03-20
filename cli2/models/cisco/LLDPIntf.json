@@ -1,0 +1,10 @@
+{
+  "lldpintf": {
+    "cliname": "lldp", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/LLDPIntfSubCmds.json"
+    }, 
+    "help": "Link Layer Discovery Protocol (LLDP) Commands", 
+    "prompt": ""
+  }
+}

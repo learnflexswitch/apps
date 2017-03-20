@@ -1,0 +1,10 @@
+{
+  "lacpglobal": {
+    "cliname": "lacp", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/LacpGlobalSubCmds.json"
+    }, 
+    "help": "Configure LACP Admin Status", 
+    "prompt": ""
+  }
+}

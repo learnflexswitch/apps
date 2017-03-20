@@ -1,0 +1,15 @@
+{
+  "psustate": {
+    "cliname": "psu", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/PsuStateSubCmds.json"
+    }, 
+    "help": "Show PsuState Info", 
+    "prompt": "", 
+    "value": {
+      "PsuId": {
+        "cliname": "psu"
+      }
+    }
+  }
+}

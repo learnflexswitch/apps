@@ -1,0 +1,15 @@
+{
+  "lldpintfstate": {
+    "cliname": "neighbors", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/LLDPIntfStateSubCmds.json"
+    }, 
+    "help": "Show summary of detailed LLDP information", 
+    "prompt": "", 
+    "value": {
+      "IntfRef": {
+        "cliname": "IntfRef"
+      }
+    }
+  }
+}

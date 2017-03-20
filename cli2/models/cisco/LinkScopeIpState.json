@@ -1,0 +1,15 @@
+{
+  "linkscopeipstate": {
+    "cliname": "linkscopeip", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/LinkScopeIpStateSubCmds.json"
+    }, 
+    "help": "Show LinkScopeIpState Info", 
+    "prompt": "", 
+    "value": {
+      "LinkScopeIp": {
+        "cliname": "linkscopeip"
+      }
+    }
+  }
+}

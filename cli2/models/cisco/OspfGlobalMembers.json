@@ -1,0 +1,26 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "RouterId": {
+      "cliname": "ospf"
+    }, 
+    "ASBdrRtrStatus": {
+      "cliname": "asb_dr_rtr_status"
+    }, 
+    "TOSSupport": {
+      "cliname": "tos_support"
+    }, 
+    "AdminStat": {
+      "cliname": "admin_state"
+    }, 
+    "RestartInterval": {
+      "cliname": "restart_interval"
+    }, 
+    "RestartSupport": {
+      "cliname": "restart_support"
+    }, 
+    "ReferenceBandwidth": {
+      "cliname": "reference_bandwidth"
+    }
+  }
+}

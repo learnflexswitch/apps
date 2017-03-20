@@ -1,0 +1,18 @@
+{
+  "bgpv4routestate": {
+    "cliname": "route", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/BGPv4RouteStateSubCmds.json"
+    }, 
+    "help": "Show BGPv4RouteState Info", 
+    "prompt": "", 
+    "value": {
+      "CIDRLen": {
+        "cliname": "cidrlen"
+      }, 
+      "Network": {
+        "cliname": "route"
+      }
+    }
+  }
+}

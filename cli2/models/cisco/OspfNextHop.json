@@ -1,0 +1,9 @@
+{
+  "ospfnexthop": {
+    "cliname": "", 
+    "commands": {}, 
+    "help": "Config OspfNextHop Info", 
+    "prompt": "", 
+    "value": {}
+  }
+}

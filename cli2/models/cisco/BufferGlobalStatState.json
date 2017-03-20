@@ -1,0 +1,15 @@
+{
+  "bufferglobalstatstate": {
+    "cliname": "bufferglobalstat", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/BufferGlobalStatStateSubCmds.json"
+    }, 
+    "help": "Show BufferGlobalStatState Info", 
+    "prompt": "", 
+    "value": {
+      "DeviceId": {
+        "cliname": "bufferglobalstat"
+      }
+    }
+  }
+}

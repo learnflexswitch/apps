@@ -1,0 +1,23 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "Priority": {
+      "cliname": "priority"
+    }, 
+    "HelloTime": {
+      "cliname": "hello_time"
+    }, 
+    "TxHoldCount": {
+      "cliname": "tx_hold_count"
+    }, 
+    "Vlan": {
+      "cliname": "brg_vlan"
+    }, 
+    "ForwardDelay": {
+      "cliname": "forward_delay"
+    }, 
+    "MaxAge": {
+      "cliname": "max_age"
+    }
+  }
+}

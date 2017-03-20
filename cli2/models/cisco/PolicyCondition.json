@@ -1,0 +1,15 @@
+{
+  "policycondition": {
+    "cliname": "route_policy_condition", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/PolicyConditionSubCmds.json"
+    }, 
+    "help": "Policy Condition", 
+    "prompt": "route-policy-condition", 
+    "value": {
+      "Name": {
+        "cliname": "route_policy_condition"
+      }
+    }
+  }
+}

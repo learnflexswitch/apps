@@ -1,0 +1,18 @@
+{
+  "subipv4intf": {
+    "cliname": "subipv4intf", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/SubIPv4IntfSubCmds.json"
+    }, 
+    "help": "Config SubIPv4Intf Info", 
+    "prompt": "", 
+    "value": {
+      "IntfRef": {
+        "cliname": "ethernet"
+      }, 
+      "IpAddr": {
+        "cliname": "ipaddr"
+      }
+    }
+  }
+}

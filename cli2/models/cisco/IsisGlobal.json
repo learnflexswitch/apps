@@ -1,0 +1,10 @@
+{
+  "isisglobal": {
+    "cliname": "isisglobal", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/IsisGlobalSubCmds.json"
+    }, 
+    "help": "Config IsisGlobal Info", 
+    "prompt": "", 
+  }
+}

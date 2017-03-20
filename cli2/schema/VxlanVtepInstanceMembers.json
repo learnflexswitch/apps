@@ -1,0 +1,430 @@
+{
+  "cmd_to_subcmd": {}, 
+  "commands": {
+    "description": "", 
+    "properties": {
+      "DstIp": {
+        "properties": {
+          "argtype": {
+            "enum": [
+              "(([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(%[\\p{N}\\p{L}]+)?"
+            ], 
+            "type": "string"
+          }, 
+          "cliname": {
+            "default": "DstIp", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "(([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(%[\\p{N}\\p{L}]+)?  Destination IP address for the static VxLAN tunnel", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "DstUDP": {
+        "properties": {
+          "argtype": {
+            "maximum": 65536, 
+            "minimum": 0, 
+            "type": "uint16"
+          }, 
+          "cliname": {
+            "default": "DstUDP", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "4789"
+          }, 
+          "help": {
+            "default": "vxlan udp port.  Deafult is the iana default udp port default: 4789", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "InnerVlanHandlingMode": {
+        "properties": {
+          "argtype": {
+            "enum": [
+              0, 
+              1
+            ], 
+            "type": "int32"
+          }, 
+          "cliname": {
+            "default": "InnerVlanHandlingMode", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "0"
+          }, 
+          "help": {
+            "default": "discard-inner-vlan(0)/no-discard-inner-vlan(1)  The inner vlan tag handling mode. default: 0", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "Intf": {
+        "properties": {
+          "argtype": {
+            "type": "string"
+          }, 
+          "cliname": {
+            "default": "vxlanvtepinstance", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "VTEP instance identifier name. should be defined as either vtep<id#> or <id#> if the later then 'vtep' will be prepended to the <id#> example", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "IntfRef": {
+        "properties": {
+          "argtype": {
+            "type": "string"
+          }, 
+          "cliname": {
+            "default": "IntfRef", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "Source interface where the source ip will be derived from.  If an interface is not supplied the src-ip will be used. This attribute takes presedence over src-ip attribute.", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "Mtu": {
+        "properties": {
+          "argtype": {
+            "maximum": 4294967296, 
+            "minimum": 0, 
+            "type": "uint32"
+          }, 
+          "cliname": {
+            "default": "Mtu", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "1550"
+          }, 
+          "help": {
+            "default": "Set the MTU to be applied to all VTEP within this VxLAN default: 1550", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "SrcIp": {
+        "properties": {
+          "argtype": {
+            "enum": "(([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(%[\\p{N}\\p{L}]+)?", 
+            "type": "string"
+          }, 
+          "cliname": {
+            "default": "SrcIp", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "0.0.0.0"
+          }, 
+          "help": {
+            "default": "(([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])\\.){3}([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(%[\\p{N}\\p{L}]+)?  Source IP address for the VxLAN tunnel default: 0.0.0.0", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "TOS": {
+        "properties": {
+          "argtype": {
+            "maximum": 65536, 
+            "minimum": 0, 
+            "type": "uint16"
+          }, 
+          "cliname": {
+            "default": "TOS", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "0"
+          }, 
+          "help": {
+            "default": "Type of Service default: 0", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "TTL": {
+        "properties": {
+          "argtype": {
+            "maximum": 65536, 
+            "minimum": 0, 
+            "type": "uint16"
+          }, 
+          "cliname": {
+            "default": "TTL", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "255"
+          }, 
+          "help": {
+            "default": "TTL of the Vxlan tunnel default: 255", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "VlanId": {
+        "properties": {
+          "argtype": {
+            "maximum": 65536, 
+            "minimum": 0, 
+            "type": "uint16"
+          }, 
+          "cliname": {
+            "default": "VlanId", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "Vlan Id to encapsulate with the vtep tunnel ethernet header", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "Vni": {
+        "properties": {
+          "argtype": {
+            "maximum": 16777215, 
+            "minimum": 0, 
+            "type": "uint32"
+          }, 
+          "cliname": {
+            "default": "Vni", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "0-16777215  Reference to the vxlan domain that this vtep is attached to", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }
+    }, 
+    "type": "object"
+  }, 
+  "createwithdefault": {
+    "default": false, 
+    "description": "Attribute used to tell the cli whether an object can be created withdefaultref and/or default settings.  If this is false, all attributes must be set by user in order for create to be called.", 
+    "type": "boolean"
+  }, 
+  "defaultref": {
+    "description": "Object which contains defaults for the given object, the common case will be a global object.  Flexswitch Model may have defaults set in model they will be overwriten by what is defined here. If default is not set in model or defaultref, then a 0 (int), true (bool) and '' (string) will be used. This attribute will also be used on a deletion of an attribute within an object.  A 'no attribute' will set the attribute back to default", 
+    "properties": {}, 
+    "type": "object"
+  }, 
+  "listattrs": [], 
+  "objname": {
+    "default": "VxlanVtepInstance", 
+    "description": "object name to which references these attributes", 
+    "type": "string"
+  }
+}

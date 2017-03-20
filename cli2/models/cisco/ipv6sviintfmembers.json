@@ -1,0 +1,13 @@
+{
+  "commands": {
+    "IntfRef": {
+      "cliname": "vlan"
+    },
+    "IpAddr": {
+      "cliname": "address"
+    },
+    "LinkIp": {
+      "cliname": "linkip"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "platformmgmtdevicestate": {
+    "cliname": "platformmgmtdevice", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/PlatformMgmtDeviceStateSubCmds.json"
+    }, 
+    "help": "Show PlatformMgmtDeviceState Info", 
+    "prompt": "", 
+    "value": {
+      "DeviceName": {
+        "cliname": "platformmgmtdevice"
+      }
+    }
+  }
+}

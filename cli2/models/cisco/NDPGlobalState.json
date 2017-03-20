@@ -1,0 +1,10 @@
+{
+  "ndpglobalstate": {
+    "cliname": "ndpglobal", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/NDPGlobalStateSubCmds.json"
+    }, 
+    "help": "Show NDPGlobalState Info", 
+    "prompt": "",
+  }
+}

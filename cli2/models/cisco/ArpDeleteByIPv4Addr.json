@@ -1,0 +1,9 @@
+{
+  "arpdeletebyipv4addr": {
+    "cliname": "", 
+    "commands": {}, 
+    "help": "Config ArpDeleteByIPv4Addr Info", 
+    "prompt": "", 
+    "value": {}
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "ospflsakey": {
+    "cliname": "", 
+    "commands": {}, 
+    "help": "Config OspfLsaKey Info", 
+    "prompt": "", 
+    "value": {}
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "iptableacl": {
+    "cliname": "table", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/IpTableAclSubCmds.json"
+    }, 
+    "help": "Ip Table ACL rules. Ip Table ACL rule name", 
+    "prompt": "table", 
+    "value": {
+      "Name": {
+        "cliname": "table"
+      }
+    }
+  }
+}

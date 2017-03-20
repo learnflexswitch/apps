@@ -1,0 +1,15 @@
+{
+  "portstate": {
+    "cliname": "ethernet", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/PortStateSubCmds.json"
+    }, 
+    "help": "Show Port Interface", 
+    "prompt": "", 
+    "value": {
+      "IntfRef": {
+        "cliname": "ethernet"
+      }
+    }
+  }
+}

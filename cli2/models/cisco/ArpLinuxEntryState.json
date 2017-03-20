@@ -1,0 +1,15 @@
+{
+  "arplinuxentrystate": {
+    "cliname": "arp_entry_linux", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/ArpLinuxEntryStateSubCmds.json"
+    }, 
+    "help": "Show Linux Arp Entry By IP", 
+    "prompt": "", 
+    "value": {
+      "IpAddr": {
+        "cliname": "arp_entry_linux"
+      }
+    }
+  }
+}

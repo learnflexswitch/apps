@@ -1,0 +1,15 @@
+{
+  "qsfpstate": {
+    "cliname": "qsfp", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/QsfpStateSubCmds.json"
+    }, 
+    "help": "Show QsfpState Info", 
+    "prompt": "", 
+    "value": {
+      "QsfpId": {
+        "cliname": "qsfp"
+      }
+    }
+  }
+}

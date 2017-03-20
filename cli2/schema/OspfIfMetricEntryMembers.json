@@ -1,0 +1,171 @@
+{
+  "cmd_to_subcmd": {}, 
+  "commands": {
+    "description": "", 
+    "properties": {
+      "IfMetricAddressLessIf": {
+        "properties": {
+          "argtype": {
+            "maximum": 2147483647, 
+            "minimum": 0, 
+            "type": "int32"
+          }, 
+          "cliname": {
+            "default": "ospfifmetricentry", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "0-2147483647  For the purpose of easing the instancing of addressed and addressless interfaces; this variable takes the value 0 on interfaces with IP addresses and the value of ifIndex for interfaces having no IP address.  On row creation", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "IfMetricIpAddress": {
+        "properties": {
+          "argtype": {
+            "type": "string"
+          }, 
+          "cliname": {
+            "default": "IfMetricIpAddress", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "The IP address of this OSPF interface.  On row creation", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "IfMetricTOS": {
+        "properties": {
+          "argtype": {
+            "maximum": 30, 
+            "minimum": 0, 
+            "type": "int32"
+          }, 
+          "cliname": {
+            "default": "IfMetricTOS", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "0-30  The Type of Service metric being referenced. On row creation", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "IfMetricValue": {
+        "properties": {
+          "argtype": {
+            "maximum": 65535, 
+            "minimum": 0, 
+            "type": "int32"
+          }, 
+          "cliname": {
+            "default": "IfMetricValue", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "0-65535  The metric of using this Type of Service on this interface.  The default value of the TOS 0 metric is 10^8 / ifSpeed.", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }
+    }, 
+    "type": "object"
+  }, 
+  "createwithdefault": {
+    "default": false, 
+    "description": "Attribute used to tell the cli whether an object can be created withdefaultref and/or default settings.  If this is false, all attributes must be set by user in order for create to be called.", 
+    "type": "boolean"
+  }, 
+  "defaultref": {
+    "description": "Object which contains defaults for the given object, the common case will be a global object.  Flexswitch Model may have defaults set in model they will be overwriten by what is defined here. If default is not set in model or defaultref, then a 0 (int), true (bool) and '' (string) will be used. This attribute will also be used on a deletion of an attribute within an object.  A 'no attribute' will set the attribute back to default", 
+    "properties": {}, 
+    "type": "object"
+  }, 
+  "listattrs": [], 
+  "objname": {
+    "default": "OspfIfMetricEntry", 
+    "description": "object name to which references these attributes", 
+    "type": "string"
+  }
+}

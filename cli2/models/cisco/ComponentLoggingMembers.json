@@ -1,0 +1,11 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "Module": {
+      "cliname": "daemon"
+    }, 
+    "Level": {
+      "cliname": "logging_level"
+    }
+  }
+}

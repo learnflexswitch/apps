@@ -1,0 +1,8 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "MacAddr": {
+      "cliname": "dhcp_host"
+    }
+  }
+}

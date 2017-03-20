@@ -1,0 +1,15 @@
+{
+  "xponderglobalstate": {
+    "cliname": "xponder", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/XponderGlobalStateSubCmds.json"
+    }, 
+    "help": "This object reflects the state of the transponder system as a whole", 
+    "prompt": "", 
+    "value": {
+      "XponderId": {
+        "cliname": "xponder"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "ospfareaentry": {
+    "cliname": "area", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/OspfAreaEntrySubCmds.json"
+    }, 
+    "help": "OSPF Area Commands.\nA 32-bit integer uniquely identifying an area. Area ID 0.0.0.0 is used for the OSPF backbone.", 
+    "prompt": "area", 
+    "value": {
+      "AreaId": {
+        "cliname": "area"
+      }
+    }
+  }
+}

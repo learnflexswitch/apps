@@ -1,0 +1,15 @@
+{
+  "policyprefixset": {
+    "prompt": "route-policy-prefix-set", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/PolicyPrefixSetSubCmds.json"
+    }, 
+    "cliname": "route_policy_prefix_set", 
+    "help": "Configuring PolicyPrefixSet attributes", 
+    "value": {
+      "Name": {
+        "cliname": "route_policy_prefix_set"
+      }
+    }
+  }
+}

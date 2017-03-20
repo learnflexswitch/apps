@@ -1,0 +1,281 @@
+{
+  "cmd_to_subcmd": {}, 
+  "commands": {
+    "description": "", 
+    "properties": {
+      "ASBdrRtrStatus": {
+        "properties": {
+          "argtype": {
+            "type": "bool"
+          }, 
+          "cliname": {
+            "default": "ASBdrRtrStatus", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "True/False  A flag to note whether this router is configured as an Autonomous System Border Router.  This object is persistent and when written the entity SHOULD save the change to non-volatile storage.", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "AdminStat": {
+        "properties": {
+          "argtype": {
+            "maximum": 2147483647, 
+            "minimum": -2147483648, 
+            "type": "int32"
+          }, 
+          "cliname": {
+            "default": "AdminStat", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "Indicates if OSPF is enabled globally", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "ReferenceBandwidth": {
+        "properties": {
+          "argtype": {
+            "maximum": 2147483647, 
+            "minimum": 0, 
+            "type": "uint32"
+          }, 
+          "cliname": {
+            "default": "ReferenceBandwidth", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "100"
+          }, 
+          "help": {
+            "default": "0-2147483647  Reference bandwidth in kilobits/second for calculating default interface metrics. Unit default: 100", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "RestartInterval": {
+        "properties": {
+          "argtype": {
+            "maximum": 1800, 
+            "minimum": 0, 
+            "type": "int32"
+          }, 
+          "cliname": {
+            "default": "RestartInterval", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "0-1800  *** This element is added for future use. *** Configured OSPF graceful restart timeout interval. This object is persistent and when written the entity SHOULD save the change to non-volatile storage.", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "RestartSupport": {
+        "properties": {
+          "argtype": {
+            "enum": [
+              3, 
+              1, 
+              2
+            ], 
+            "type": "int32"
+          }, 
+          "cliname": {
+            "default": "RestartSupport", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "plannedAndUnplanned(3)/none(1)/plannedOnly(2)  *** This element is added for future use. *** The router's support for OSPF graceful restart. Options include", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "RouterId": {
+        "properties": {
+          "argtype": {
+            "type": "string"
+          }, 
+          "cliname": {
+            "default": "ospfglobal", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "A 32-bit integer uniquely identifying the router in the Autonomous System. By convention", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "TOSSupport": {
+        "properties": {
+          "argtype": {
+            "type": "bool"
+          }, 
+          "cliname": {
+            "default": "TOSSupport", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "false"
+          }, 
+          "help": {
+            "default": "True/False  *** This element is added for future use. *** The router's support for type-of-service routing. This object is persistent and when written the entity SHOULD save the change to non-volatile storage. default: false", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }
+    }, 
+    "type": "object"
+  }, 
+  "createwithdefault": {
+    "default": false, 
+    "description": "Attribute used to tell the cli whether an object can be created withdefaultref and/or default settings.  If this is false, all attributes must be set by user in order for create to be called.", 
+    "type": "boolean"
+  }, 
+  "defaultref": {
+    "description": "Object which contains defaults for the given object, the common case will be a global object.  Flexswitch Model may have defaults set in model they will be overwriten by what is defined here. If default is not set in model or defaultref, then a 0 (int), true (bool) and '' (string) will be used. This attribute will also be used on a deletion of an attribute within an object.  A 'no attribute' will set the attribute back to default", 
+    "properties": {}, 
+    "type": "object"
+  }, 
+  "listattrs": [], 
+  "objname": {
+    "default": "OspfGlobal", 
+    "description": "object name to which references these attributes", 
+    "type": "string"
+  }
+}

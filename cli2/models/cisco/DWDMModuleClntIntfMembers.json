@@ -1,0 +1,65 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "HostTxEqDfe": {
+      "cliname": "HostTxEqDfe"
+    }, 
+    "HostRxSerializerTap1Gain": {
+      "cliname": "HostRxSerializerTap1Gain"
+    }, 
+    "RxPRBSPattern": {
+      "cliname": "RxPRBSPattern"
+    }, 
+    "HostRxSerializerTap2Delay": {
+      "cliname": "HostRxSerializerTap2Delay"
+    }, 
+    "HostRxSerializerTap2Gain": {
+      "cliname": "HostRxSerializerTap2Gain"
+    }, 
+    "HostRxSerializerTap0Delay": {
+      "cliname": "HostRxSerializerTap0Delay"
+    }, 
+    "HostTxEqCtle": {
+      "cliname": "HostTxEqCtle"
+    }, 
+    "TxPRBSPattern": {
+      "cliname": "TxPRBSPattern"
+    }, 
+    "HostTxEqLfCtle": {
+      "cliname": "HostTxEqLfCtle"
+    }, 
+    "ClntIntfId": {
+      "cliname": "clntIntf"
+    }, 
+    "EnableRxPRBS": {
+      "cliname": "EnableRxPRBS"
+    }, 
+    "TXFECDecDisable": {
+      "cliname": "TXFECDecDisable"
+    }, 
+    "EnableHostLoopback": {
+      "cliname": "EnableHostLoopback"
+    }, 
+    "AdminState": {
+      "cliname": "AdminState"
+    }, 
+    "RXFECDecDisable": {
+      "cliname": "RXFECDecDisable"
+    }, 
+    "NwLaneTributaryToClntIntfMap": {
+      "cliname": "NwLaneTributaryToClntIntfMap"
+    }, 
+    "EnableIntSerdesNWLoopback": {
+      "cliname": "EnableIntSerdesNWLoopback"
+    }, 
+    "EnableTxPRBSChecker": {
+      "cliname": "EnableTxPRBSChecker"
+    }, 
+    "HostRxSerializerTap0Gain": {
+      "cliname": "HostRxSerializerTap0Gain"
+    }, 
+    "ModuleId": {
+      "cliname": "ModuleId"
+    }
+  }
+}

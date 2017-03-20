@@ -1,0 +1,18 @@
+{
+  "voltagesensorpmdatastate": {
+    "cliname": "voltagesensorpmdata", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/VoltageSensorPMDataStateSubCmds.json"
+    }, 
+    "help": "Show VoltageSensorPMDataState Info", 
+    "prompt": "", 
+    "value": {
+      "Class": {
+        "cliname": "voltagesensorpmdata"
+      }, 
+      "Name": {
+        "cliname": "name"
+      }
+    }
+  }
+}

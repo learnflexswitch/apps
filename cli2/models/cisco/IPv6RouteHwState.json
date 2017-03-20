@@ -1,0 +1,15 @@
+{
+  "ipv6routehwstate": {
+    "cliname": "hw_route_v6", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/IPv6RouteHwStateSubCmds.json"
+    }, 
+    "help": "Show IPv6RouteHwState Info", 
+    "prompt": "", 
+    "value": {
+      "DestinationNw": {
+        "cliname": "hw_route_v6"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "resetbgpv6neighborbyinterface": {
+    "cliname": "", 
+    "commands": {}, 
+    "help": "Config ResetBGPv6NeighborByInterface Info", 
+    "prompt": "", 
+    "value": {}
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "routestatstate": {
+    "cliname": "routestat", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/RouteStatStateSubCmds.json"
+    }, 
+    "help": "Show RouteStatState Info", 
+    "prompt": "",
+  }
+}

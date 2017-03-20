@@ -1,0 +1,47 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "MacAddr": {
+      "cliname": "MacAddr"
+    }, 
+    "Description": {
+      "cliname": "Description"
+    }, 
+    "IntfRef": {
+      "cliname": "ethernet"
+    }, 
+    "Duplex": {
+      "cliname": "duplex"
+    }, 
+    "AdminState": {
+      "cliname": "shutdown"
+    }, 
+    "MediaType": {
+      "cliname": "MediaType"
+    }, 
+    "EnableFEC": {
+      "cliname": "EnableFEC"
+    }, 
+    "PhyIntfType": {
+      "cliname": "PhyIntfType"
+    }, 
+    "LoopbackMode": {
+      "cliname": "LoopbackMode"
+    }, 
+    "BreakOutMode": {
+      "cliname": "BreakOutMode"
+    }, 
+    "IfIndex": {
+      "cliname": "IfIndex"
+    }, 
+    "Autoneg": {
+      "cliname": "negotiate"
+    }, 
+    "Mtu": {
+      "cliname": "mtu"
+    }, 
+    "Speed": {
+      "cliname": "speed"
+    }
+  }
+}

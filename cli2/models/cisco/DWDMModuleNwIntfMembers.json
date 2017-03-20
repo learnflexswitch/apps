@@ -1,0 +1,59 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "ClntIntfIdToTributary0Map": {
+      "cliname": "ClntIntfIdToTributary0Map"
+    }, 
+    "EnableRxPRBSChecker": {
+      "cliname": "EnableRxPRBSChecker"
+    }, 
+    "RxPRBSPattern": {
+      "cliname": "RxPRBSPattern"
+    }, 
+    "TxPulseShapeFltrRollOff": {
+      "cliname": "TxPulseShapeFltrRollOff"
+    }, 
+    "ClntIntfIdToTributary1Map": {
+      "cliname": "ClntIntfIdToTributary1Map"
+    }, 
+    "RxPRBSInvertPattern": {
+      "cliname": "RxPRBSInvertPattern"
+    }, 
+    "TxPRBSInvertPattern": {
+      "cliname": "TxPRBSInvertPattern"
+    }, 
+    "EnableTxPRBS": {
+      "cliname": "EnableTxPRBS"
+    }, 
+    "TxPower": {
+      "cliname": "TxPower"
+    }, 
+    "AdminState": {
+      "cliname": "AdminState"
+    }, 
+    "ChannelNumber": {
+      "cliname": "ChannelNumber"
+    }, 
+    "FECMode": {
+      "cliname": "FECMode"
+    }, 
+    "NwIntfId": {
+      "cliname": "NwIntfId"
+    }, 
+    "DiffEncoding": {
+      "cliname": "DiffEncoding"
+    }, 
+    "ModuleId": {
+      "cliname": "ModuleId"
+    }, 
+    "TxPRBSPattern": {
+      "cliname": "TxPRBSPattern"
+    }, 
+    "ModulationFmt": {
+      "cliname": "ModulationFmt"
+    }, 
+    "TxPulseShapeFltrType": {
+      "cliname": "TxPulseShapeFltrType"
+    }
+  }
+}

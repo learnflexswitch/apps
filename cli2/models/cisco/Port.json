@@ -1,0 +1,15 @@
+{
+  "port": {
+    "cliname": "ethernet", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/PortSubCmds.json"
+    }, 
+    "help": "Ethernet Port Commands", 
+    "prompt": "eth", 
+    "value": {
+      "IntfRef": {
+        "cliname": "ethernet"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "subcmd1": {
+    "$ref": "file:/tmp/snaproute/cli/schema/BGPGlobalMembers.json"
+  },
+  "subcmd2": {
+    "$ref": "file:/tmp/snaproute/cli/schema/bgpneighbor.json"
+  },
+  "subcmd3": {
+    "$ref": "file:/tmp/snaproute/cli/schema/BGPv4PeerGroup.json"
+  },
+  "subcmd4": {
+    "$ref": "file:/tmp/snaproute/cli/schema/BGPv6Aggregate.json"
+  },
+  "subcmd5": {
+    "$ref": "file:/tmp/snaproute/cli/schema/BGPv4Aggregate.json"
+  },
+  "subcmd6": {
+    "$ref": "file:/tmp/snaproute/cli/schema/BGPv6PeerGroup.json"
+  }
+}

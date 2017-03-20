@@ -1,0 +1,15 @@
+{
+  "ndpentryhwstate": {
+    "cliname": "ndp_entry_hw", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/NdpEntryHwStateSubCmds.json"
+    }, 
+    "help": "Show IPv6 Hardware Installed NDP entries", 
+    "prompt": "", 
+    "value": {
+      "IpAddr": {
+        "cliname": "ndp_entry_hw"
+      }
+    }
+  }
+}

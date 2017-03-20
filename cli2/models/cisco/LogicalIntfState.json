@@ -1,0 +1,15 @@
+{
+  "logicalintfstate": {
+    "cliname": "logical", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/LogicalIntfStateSubCmds.json"
+    }, 
+    "help": "Show Logical Interface", 
+    "prompt": "", 
+    "value": {
+      "Name": {
+        "cliname": "logical"
+      }
+    }
+  }
+}

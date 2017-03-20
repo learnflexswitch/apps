@@ -1,0 +1,14 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "DefaultLeaseTime": {
+      "cliname": "lease_time"
+    }, 
+    "Enable": {
+      "cliname": "enable"
+    }, 
+    "MaxLeaseTime": {
+      "cliname": "max_lease_time"
+    }
+  }
+}

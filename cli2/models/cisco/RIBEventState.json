@@ -1,0 +1,15 @@
+{
+  "ribeventstate": {
+    "cliname": "ribevent", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/RIBEventStateSubCmds.json"
+    }, 
+    "help": "Show RIBEventState Info", 
+    "prompt": "", 
+    "value": {
+      "Index": {
+        "cliname": "ribevent"
+      }
+    }
+  }
+}

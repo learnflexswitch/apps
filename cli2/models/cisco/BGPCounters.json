@@ -1,0 +1,9 @@
+{
+  "bgpcounters": {
+    "cliname": "", 
+    "commands": {}, 
+    "help": "Config BGPCounters Info", 
+    "prompt": "", 
+    "value": {}
+  }
+}

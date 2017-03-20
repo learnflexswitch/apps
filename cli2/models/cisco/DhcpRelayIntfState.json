@@ -1,0 +1,15 @@
+{
+  "dhcprelayintfstate": {
+    "cliname": "dhcprelayintf", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/DhcpRelayIntfStateSubCmds.json"
+    }, 
+    "help": "Show DhcpRelayIntfState Info", 
+    "prompt": "", 
+    "value": {
+      "IntfId": {
+        "cliname": "intfid"
+      }
+    }
+  }
+}

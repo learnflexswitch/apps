@@ -1,0 +1,14 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "IntfRef": {
+      "cliname": "intfref"
+    }, 
+    "IpAddr": {
+      "cliname": "ipaddr"
+    }, 
+    "LinkIp": {
+      "cliname": "linkip"
+    }
+  }
+}

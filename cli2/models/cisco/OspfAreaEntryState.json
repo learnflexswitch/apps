@@ -1,0 +1,15 @@
+{
+  "ospfareaentrystate": {
+    "cliname": "area", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/OspfAreaEntryStateSubCmds.json"
+    }, 
+    "help": "OSPF Area Info", 
+    "prompt": "", 
+    "value": {
+      "AreaId": {
+        "cliname": "area"
+      }
+    }
+  }
+}

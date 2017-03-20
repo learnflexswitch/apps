@@ -1,0 +1,15 @@
+{
+  "dwdmmodulenwintfstate": {
+    "cliname": "nwIntf", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/DWDMModuleNwIntfStateSubCmds.json"
+    }, 
+    "help": "Command to view state of DWDM module network interface", 
+    "prompt": "nwIntf", 
+    "value": {
+      "NwIntfId": {
+        "cliname": "nwIntf"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "EventId": {
+      "cliname": "EventId"
+    }, 
+    "EventName": {
+      "cliname": "EventName"
+    }, 
+    "SrcObjName": {
+      "cliname": "SrcObjName"
+    }, 
+    "OwnerName": {
+      "cliname": "OwnerName"
+    }, 
+    "OwnerId": {
+      "cliname": "OwnerId"
+    }
+  }
+}

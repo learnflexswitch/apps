@@ -1,0 +1,227 @@
+{
+  "faultstate": {
+    "createwithdefault": {
+      "default": true, 
+      "description": "Attribute used to tell the cli whether an object can be created withdefaultref and/or default settings.  If this is false, all attributes must be set by user in order for create to be called.", 
+      "type": "boolean"
+    }, 
+    "properties": {
+      "cliname": {
+        "default": "", 
+        "description": "name used in cli to describe bfd", 
+        "type": "string"
+      }, 
+      "commands": {
+        "properties": {
+          "$ref": "file:/tmp/snaproute/cli/schema/FaultStateSubCmds.json"
+        }, 
+        "type": "object"
+      }, 
+      "help": {
+        "default": "", 
+        "type": "string"
+      }, 
+      "objname": {
+        "default": "FaultState", 
+        "description": "object name to which references these attributes", 
+        "type": "string"
+      }, 
+      "prompt": {
+        "default": "", 
+        "description": "what to display on the prompt when the user has entered a command", 
+        "displayValue": false, 
+        "type": "string"
+      }, 
+      "value": {
+        "description": "this is a trigger to cli that a command needs one of the attribute values contained in the properties commands LeafMemberTemplate", 
+        "properties": {
+          "EventId": {
+            "properties": {
+              "argtype": {
+                "maximum": 2147483647, 
+                "minimum": -2147483648, 
+                "type": "int32"
+              }, 
+              "cliname": {
+                "default": "fault", 
+                "type": "string"
+              }, 
+              "defaultarg": {
+                "default": ""
+              }, 
+              "help": {
+                "default": "Fault event id picked up from events.json", 
+                "type": "string"
+              }, 
+              "isdefaultset": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "islist": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "key": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "prompt": {
+                "default": "", 
+                "type": "string"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "EventName": {
+            "properties": {
+              "argtype": {
+                "type": "string"
+              }, 
+              "cliname": {
+                "default": "EventName", 
+                "type": "string"
+              }, 
+              "defaultarg": {
+                "default": ""
+              }, 
+              "help": {
+                "default": "Fault event name picked up from events.json", 
+                "type": "string"
+              }, 
+              "isdefaultset": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "islist": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "key": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "prompt": {
+                "default": "", 
+                "type": "string"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "OwnerId": {
+            "properties": {
+              "argtype": {
+                "maximum": 2147483647, 
+                "minimum": -2147483648, 
+                "type": "int32"
+              }, 
+              "cliname": {
+                "default": "OwnerId", 
+                "type": "string"
+              }, 
+              "defaultarg": {
+                "default": ""
+              }, 
+              "help": {
+                "default": "Fault owner daemon Id picked up from events.json", 
+                "type": "string"
+              }, 
+              "isdefaultset": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "islist": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "key": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "prompt": {
+                "default": "", 
+                "type": "string"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "OwnerName": {
+            "properties": {
+              "argtype": {
+                "type": "string"
+              }, 
+              "cliname": {
+                "default": "OwnerName", 
+                "type": "string"
+              }, 
+              "defaultarg": {
+                "default": ""
+              }, 
+              "help": {
+                "default": "Fault owner daemon name picked up from events.json", 
+                "type": "string"
+              }, 
+              "isdefaultset": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "islist": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "key": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "prompt": {
+                "default": "", 
+                "type": "string"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "SrcObjName": {
+            "properties": {
+              "argtype": {
+                "type": "string"
+              }, 
+              "cliname": {
+                "default": "SrcObjName", 
+                "type": "string"
+              }, 
+              "defaultarg": {
+                "default": ""
+              }, 
+              "help": {
+                "default": "Fault event name picked up from events.json", 
+                "type": "string"
+              }, 
+              "isdefaultset": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "islist": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "key": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "prompt": {
+                "default": "", 
+                "type": "string"
+              }
+            }, 
+            "type": "object"
+          }
+        }, 
+        "type": "object"
+      }
+    }, 
+    "required": [
+      "value", 
+      "cliname"
+    ], 
+    "type": "object"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "led": {
+    "cliname": "led", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/LedSubCmds.json"
+    }, 
+    "help": "Config Led Info", 
+    "prompt": "", 
+    "value": {
+      "LedId": {
+        "cliname": "led"
+      }
+    }
+  }
+}

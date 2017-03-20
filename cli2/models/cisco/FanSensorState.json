@@ -1,0 +1,15 @@
+{
+  "fansensorstate": {
+    "cliname": "fansensor", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/FanSensorStateSubCmds.json"
+    }, 
+    "help": "Show FanSensorState Info", 
+    "prompt": "", 
+    "value": {
+      "Name": {
+        "cliname": "fansensor"
+      }
+    }
+  }
+}

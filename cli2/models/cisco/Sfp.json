@@ -1,0 +1,15 @@
+{
+  "sfp": {
+    "cliname": "sfp", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/SfpSubCmds.json"
+    }, 
+    "help": "Config Sfp Info", 
+    "prompt": "", 
+    "value": {
+      "SfpId": {
+        "cliname": "sfp"
+      }
+    }
+  }
+}

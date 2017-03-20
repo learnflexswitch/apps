@@ -1,0 +1,43 @@
+{
+  "showinterface": {
+    "type" : "object",
+    "properties" : {
+      "prompt": {
+        "type": "string",
+        "default": "interface"
+      },
+      "cliname": {
+        "type": "string",
+        "description": "Name used in cli to describe an interface",
+        "default": "interface"
+      },
+      "help": {
+        "type": "string",
+        "default": "Configure interfaces"
+      },
+      "commands": {
+        "type": "object",
+        "description": "holds all related commands related to the different interfaces",
+        "properties": {
+          "subcmd1": {
+            "$ref": "file:/tmp/snaproute/cli/schema/PortState.json"
+          },
+          "subcmd2": {
+            "$ref": "file:/tmp/snaproute/cli/schema/svi.json"
+          },
+          "subcmd4": {
+            "$ref": "file:/tmp/snaproute/cli/schema/LogicalIntfState.json"
+          },
+          "subcmd5": {
+            "$ref": "file:/tmp/snaproute/cli/schema/showinterfacestatus.json"
+          }
+        }
+      },
+      "objname": {
+        "default": "Interface",
+        "type": "string",
+        "description": "object name to which references these attributes"
+      }
+    }
+  }
+}

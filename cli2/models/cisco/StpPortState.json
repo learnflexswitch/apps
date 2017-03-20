@@ -1,0 +1,18 @@
+{
+  "stpportstate": {
+    "cliname": "ethernet", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/StpPortStateSubCmds.json"
+    }, 
+    "help": "Spanning Tree Port Info", 
+    "prompt": "", 
+    "value": {
+      "IntfRef": {
+        "cliname": "ethernet"
+      }, 
+      "Vlan": {
+        "cliname": "brg_vlan"
+      }
+    }
+  }
+}

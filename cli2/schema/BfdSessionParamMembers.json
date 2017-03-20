@@ -1,0 +1,392 @@
+{
+  "cmd_to_subcmd": {}, 
+  "commands": {
+    "description": "", 
+    "properties": {
+      "AuthData": {
+        "properties": {
+          "argtype": {
+            "type": "string"
+          }, 
+          "cliname": {
+            "default": "AuthData", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "snaproute"
+          }, 
+          "help": {
+            "default": "Authentication password default: snaproute", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "AuthKeyId": {
+        "properties": {
+          "argtype": {
+            "maximum": 4294967296, 
+            "minimum": 0, 
+            "type": "uint32"
+          }, 
+          "cliname": {
+            "default": "AuthKeyId", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "1"
+          }, 
+          "help": {
+            "default": "Authentication key id default: 1", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "AuthType": {
+        "properties": {
+          "argtype": {
+            "enum": [
+              "metmd5", 
+              "keyedmd5", 
+              "metsha1", 
+              "keyedsha1", 
+              "simple"
+            ], 
+            "type": "string"
+          }, 
+          "cliname": {
+            "default": "AuthType", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "simple"
+          }, 
+          "help": {
+            "default": "metmd5/keyedmd5/metsha1/keyedsha1/simple  Authentication type default: simple", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "AuthenticationEnabled": {
+        "properties": {
+          "argtype": {
+            "type": "bool"
+          }, 
+          "cliname": {
+            "default": "AuthenticationEnabled", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "false"
+          }, 
+          "help": {
+            "default": "True/False  Enable or disable authentication default: false", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "DemandEnabled": {
+        "properties": {
+          "argtype": {
+            "type": "bool"
+          }, 
+          "cliname": {
+            "default": "DemandEnabled", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "false"
+          }, 
+          "help": {
+            "default": "True/False  Enable or disable demand mode default: false", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "DesiredMinTxInterval": {
+        "properties": {
+          "argtype": {
+            "maximum": 4294967296, 
+            "minimum": 0, 
+            "type": "uint32"
+          }, 
+          "cliname": {
+            "default": "DesiredMinTxInterval", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "1000"
+          }, 
+          "help": {
+            "default": "Desired minimum tx interval in ms default: 1000", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "LocalMultiplier": {
+        "properties": {
+          "argtype": {
+            "maximum": 4294967296, 
+            "minimum": 0, 
+            "type": "uint32"
+          }, 
+          "cliname": {
+            "default": "LocalMultiplier", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "3"
+          }, 
+          "help": {
+            "default": "Detection multiplier default: 3", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "Name": {
+        "properties": {
+          "argtype": {
+            "type": "string"
+          }, 
+          "cliname": {
+            "default": "bfdsessionparam", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "Session parameters", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "RequiredMinEchoRxInterval": {
+        "properties": {
+          "argtype": {
+            "maximum": 4294967296, 
+            "minimum": 0, 
+            "type": "uint32"
+          }, 
+          "cliname": {
+            "default": "RequiredMinEchoRxInterval", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "0"
+          }, 
+          "help": {
+            "default": "Required minimum echo rx interval in ms default: 0", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "RequiredMinRxInterval": {
+        "properties": {
+          "argtype": {
+            "maximum": 4294967296, 
+            "minimum": 0, 
+            "type": "uint32"
+          }, 
+          "cliname": {
+            "default": "RequiredMinRxInterval", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "1000"
+          }, 
+          "help": {
+            "default": "Required minimum rx interval in ms default: 1000", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }
+    }, 
+    "type": "object"
+  }, 
+  "createwithdefault": {
+    "default": true, 
+    "description": "Attribute used to tell the cli whether an object can be created withdefaultref and/or default settings.  If this is false, all attributes must be set by user in order for create to be called.", 
+    "type": "boolean"
+  }, 
+  "defaultref": {
+    "description": "Object which contains defaults for the given object, the common case will be a global object.  Flexswitch Model may have defaults set in model they will be overwriten by what is defined here. If default is not set in model or defaultref, then a 0 (int), true (bool) and '' (string) will be used. This attribute will also be used on a deletion of an attribute within an object.  A 'no attribute' will set the attribute back to default", 
+    "properties": {}, 
+    "type": "object"
+  }, 
+  "listattrs": [], 
+  "objname": {
+    "default": "BfdSessionParam", 
+    "description": "object name to which references these attributes", 
+    "type": "string"
+  }
+}

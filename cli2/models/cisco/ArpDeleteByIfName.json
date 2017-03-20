@@ -1,0 +1,9 @@
+{
+  "arpdeletebyifname": {
+    "cliname": "", 
+    "commands": {}, 
+    "help": "Config ArpDeleteByIfName Info", 
+    "prompt": "", 
+    "value": {}
+  }
+}

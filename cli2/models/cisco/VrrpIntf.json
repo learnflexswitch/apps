@@ -1,0 +1,18 @@
+{
+  "vrrpintf": {
+    "cliname": "vrrp", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/VrrpIntfSubCmds.json"
+    }, 
+    "help": "Virtual Router Redundancy Protocol (VRRP) commands. Virtual Router's Unique Identifier", 
+    "prompt": "vrrp", 
+    "value": {
+      "IfIndex": {
+        "cliname": "ethernet"
+      }, 
+      "VRID": {
+        "cliname": "vrrp"
+      }
+    }
+  }
+}

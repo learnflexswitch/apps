@@ -1,0 +1,255 @@
+{
+  "cmd_to_subcmd": {}, 
+  "commands": {
+    "description": "", 
+    "properties": {
+      "AreaId": {
+        "properties": {
+          "argtype": {
+            "type": "string"
+          }, 
+          "cliname": {
+            "default": "ospfareaentry", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "A 32-bit integer uniquely identifying an area. Area ID 0.0.0.0 is used for the OSPF backbone.", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "AreaNssaTranslatorRole": {
+        "properties": {
+          "argtype": {
+            "enum": [
+              1, 
+              2
+            ], 
+            "type": "int32"
+          }, 
+          "cliname": {
+            "default": "AreaNssaTranslatorRole", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "always(1)/candidate(2)  Indicates an NSSA border router's ability to perform NSSA translation of type-7 LSAs into type-5 LSAs.", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "AreaSummary": {
+        "properties": {
+          "argtype": {
+            "enum": [
+              2, 
+              1
+            ], 
+            "type": "int32"
+          }, 
+          "cliname": {
+            "default": "AreaSummary", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "sendAreaSummary(2)/noAreaSummary(1)  The variable ospfAreaSummary controls the import of summary LSAs into stub and NSSA areas. It has no effect on other areas.  If it is noAreaSummary", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "AuthType": {
+        "properties": {
+          "argtype": {
+            "enum": [
+              0, 
+              1, 
+              2
+            ], 
+            "type": "int32"
+          }, 
+          "cliname": {
+            "default": "AuthType", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "none(0)/simplePassword(1)/md5(2)  The authentication type specified for an area.", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "ImportAsExtern": {
+        "properties": {
+          "argtype": {
+            "enum": [
+              1, 
+              2, 
+              3
+            ], 
+            "type": "int32"
+          }, 
+          "cliname": {
+            "default": "ImportAsExtern", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": ""
+          }, 
+          "help": {
+            "default": "importExternal(1)/importNoExternal(2)/importNssa(3)  Indicates if an area is a stub area", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "StubDefaultCost": {
+        "properties": {
+          "argtype": {
+            "maximum": 2147483647, 
+            "minimum": -2147483648, 
+            "type": "int32"
+          }, 
+          "cliname": {
+            "default": "StubDefaultCost", 
+            "type": "string"
+          }, 
+          "defaultarg": {
+            "default": "10"
+          }, 
+          "help": {
+            "default": "For ABR this cost indicates default cost for summary LSA. default: 10", 
+            "type": "string"
+          }, 
+          "isdefaultset": {
+            "default": true, 
+            "type": "boolean"
+          }, 
+          "islist": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "key": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "prompt": {
+            "default": "", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }
+    }, 
+    "type": "object"
+  }, 
+  "createwithdefault": {
+    "default": false, 
+    "description": "Attribute used to tell the cli whether an object can be created withdefaultref and/or default settings.  If this is false, all attributes must be set by user in order for create to be called.", 
+    "type": "boolean"
+  }, 
+  "defaultref": {
+    "description": "Object which contains defaults for the given object, the common case will be a global object.  Flexswitch Model may have defaults set in model they will be overwriten by what is defined here. If default is not set in model or defaultref, then a 0 (int), true (bool) and '' (string) will be used. This attribute will also be used on a deletion of an attribute within an object.  A 'no attribute' will set the attribute back to default", 
+    "properties": {}, 
+    "type": "object"
+  }, 
+  "listattrs": [], 
+  "objname": {
+    "default": "OspfAreaEntry", 
+    "description": "object name to which references these attributes", 
+    "type": "string"
+  }
+}

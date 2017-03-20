@@ -1,0 +1,14 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "IfIndex": {
+      "cliname": "ethernet"
+    }, 
+    "Enable": {
+      "cliname": "enable"
+    }, 
+    "ServerIp": {
+      "cliname": "server_ip"
+    }
+  }
+}

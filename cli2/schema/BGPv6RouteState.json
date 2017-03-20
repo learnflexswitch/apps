@@ -1,0 +1,120 @@
+{
+  "bgpv6routestate": {
+    "createwithdefault": {
+      "default": true, 
+      "description": "Attribute used to tell the cli whether an object can be created withdefaultref and/or default settings.  If this is false, all attributes must be set by user in order for create to be called.", 
+      "type": "boolean"
+    }, 
+    "properties": {
+      "cliname": {
+        "default": "", 
+        "description": "name used in cli to describe bfd", 
+        "type": "string"
+      }, 
+      "commands": {
+        "properties": {
+          "$ref": "file:/tmp/snaproute/cli/schema/BGPv6RouteStateSubCmds.json"
+        }, 
+        "type": "object"
+      }, 
+      "help": {
+        "default": "", 
+        "type": "string"
+      }, 
+      "objname": {
+        "default": "BGPv6RouteState", 
+        "description": "object name to which references these attributes", 
+        "type": "string"
+      }, 
+      "prompt": {
+        "default": "", 
+        "description": "what to display on the prompt when the user has entered a command", 
+        "displayValue": false, 
+        "type": "string"
+      }, 
+      "value": {
+        "description": "this is a trigger to cli that a command needs one of the attribute values contained in the properties commands LeafMemberTemplate", 
+        "properties": {
+          "CIDRLen": {
+            "properties": {
+              "argtype": {
+                "maximum": 65536, 
+                "minimum": 0, 
+                "type": "uint16"
+              }, 
+              "cliname": {
+                "default": "bgpv6route", 
+                "type": "string"
+              }, 
+              "defaultarg": {
+                "default": ""
+              }, 
+              "help": {
+                "default": "CIDR length of the IPv6 destination", 
+                "type": "string"
+              }, 
+              "isdefaultset": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "islist": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "key": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "prompt": {
+                "default": "", 
+                "type": "string"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "Network": {
+            "properties": {
+              "argtype": {
+                "type": "string"
+              }, 
+              "cliname": {
+                "default": "Network", 
+                "type": "string"
+              }, 
+              "defaultarg": {
+                "default": ""
+              }, 
+              "help": {
+                "default": "Network address of the IPv6 destination", 
+                "type": "string"
+              }, 
+              "isdefaultset": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "islist": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "key": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "prompt": {
+                "default": "", 
+                "type": "string"
+              }
+            }, 
+            "type": "object"
+          }
+        }, 
+        "type": "object"
+      }
+    }, 
+    "required": [
+      "value", 
+      "cliname"
+    ], 
+    "type": "object"
+  }
+}

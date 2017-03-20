@@ -1,0 +1,35 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "Vlan": {
+      "cliname": "brg_vlan"
+    }, 
+    "AdminState": {
+      "cliname": "enable"
+    }, 
+    "AdminEdgePort": {
+      "cliname": "adminedgeport"
+    }, 
+    "BridgeAssurance": {
+      "cliname": "bridge_assurance"
+    }, 
+    "Priority": {
+      "cliname": "priority"
+    }, 
+    "BpduGuardInterval": {
+      "cliname": "bpdu_guard_interval"
+    }, 
+    "BpduGuard": {
+      "cliname": "bpdu_guard"
+    }, 
+    "AdminPointToPoint": {
+      "cliname": "admin_pointtopoint"
+    }, 
+    "IntfRef": {
+      "cliname": "ethernet"
+    }, 
+    "AdminPathCost": {
+      "cliname": "admin_path_cost"
+    }
+  }
+}

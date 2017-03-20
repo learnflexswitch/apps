@@ -1,0 +1,18 @@
+{
+  "ospfifentrystate": {
+    "cliname": "address", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/OspfIfEntryStateSubCmds.json"
+    }, 
+    "help": "OSPF Interface Info", 
+    "prompt": "", 
+    "value": {
+      "AddressLessIf": {
+        "cliname": "AddressLessIf"
+      }, 
+      "IfIpAddress": {
+        "cliname": "address"
+      }
+    }
+  }
+}

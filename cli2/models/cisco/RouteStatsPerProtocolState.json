@@ -1,0 +1,15 @@
+{
+  "routestatsperprotocolstate": {
+    "cliname": "routestatsperprotocol", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/RouteStatsPerProtocolStateSubCmds.json"
+    }, 
+    "help": "Show RouteStatsPerProtocolState Info", 
+    "prompt": "", 
+    "value": {
+      "Protocol": {
+        "cliname": "routestatsperprotocol"
+      }
+    }
+  }
+}

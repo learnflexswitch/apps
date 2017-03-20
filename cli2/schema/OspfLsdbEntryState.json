@@ -1,0 +1,198 @@
+{
+  "ospflsdbentrystate": {
+    "createwithdefault": {
+      "default": true, 
+      "description": "Attribute used to tell the cli whether an object can be created withdefaultref and/or default settings.  If this is false, all attributes must be set by user in order for create to be called.", 
+      "type": "boolean"
+    }, 
+    "properties": {
+      "cliname": {
+        "default": "", 
+        "description": "name used in cli to describe bfd", 
+        "type": "string"
+      }, 
+      "commands": {
+        "properties": {
+          "$ref": "file:/tmp/snaproute/cli/schema/OspfLsdbEntryStateSubCmds.json"
+        }, 
+        "type": "object"
+      }, 
+      "help": {
+        "default": "", 
+        "type": "string"
+      }, 
+      "objname": {
+        "default": "OspfLsdbEntryState", 
+        "description": "object name to which references these attributes", 
+        "type": "string"
+      }, 
+      "prompt": {
+        "default": "", 
+        "description": "what to display on the prompt when the user has entered a command", 
+        "displayValue": false, 
+        "type": "string"
+      }, 
+      "value": {
+        "description": "this is a trigger to cli that a command needs one of the attribute values contained in the properties commands LeafMemberTemplate", 
+        "properties": {
+          "LsdbAreaId": {
+            "properties": {
+              "argtype": {
+                "type": "string"
+              }, 
+              "cliname": {
+                "default": "LsdbAreaId", 
+                "type": "string"
+              }, 
+              "defaultarg": {
+                "default": ""
+              }, 
+              "help": {
+                "default": "The 32-bit identifier of the area from which the LSA was received.", 
+                "type": "string"
+              }, 
+              "isdefaultset": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "islist": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "key": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "prompt": {
+                "default": "", 
+                "type": "string"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "LsdbLsid": {
+            "properties": {
+              "argtype": {
+                "type": "string"
+              }, 
+              "cliname": {
+                "default": "LsdbLsid", 
+                "type": "string"
+              }, 
+              "defaultarg": {
+                "default": ""
+              }, 
+              "help": {
+                "default": "The Link State ID is an LS Type Specific field containing either a Router ID or an IP address; it identifies the piece of the routing domain that is being described by the advertisement.", 
+                "type": "string"
+              }, 
+              "isdefaultset": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "islist": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "key": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "prompt": {
+                "default": "", 
+                "type": "string"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "LsdbRouterId": {
+            "properties": {
+              "argtype": {
+                "type": "string"
+              }, 
+              "cliname": {
+                "default": "LsdbRouterId", 
+                "type": "string"
+              }, 
+              "defaultarg": {
+                "default": ""
+              }, 
+              "help": {
+                "default": "The 32-bit number that uniquely identifies the originating router in the Autonomous System.", 
+                "type": "string"
+              }, 
+              "isdefaultset": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "islist": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "key": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "prompt": {
+                "default": "", 
+                "type": "string"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "LsdbType": {
+            "properties": {
+              "argtype": {
+                "enum": [
+                  1, 
+                  4, 
+                  5, 
+                  7, 
+                  2, 
+                  6, 
+                  3, 
+                  10
+                ], 
+                "type": "int32"
+              }, 
+              "cliname": {
+                "default": "ospflsdbentry", 
+                "type": "string"
+              }, 
+              "defaultarg": {
+                "default": ""
+              }, 
+              "help": {
+                "default": "routerLink(1)/asSummaryLink(4)/asExternalLink(5)/nssaExternalLink(7)/networkLink(2)/multicastLink(6)/summaryLink(3)/areaOpaqueLink(10)  The type of the link state advertisement. Each link state type has a separate advertisement format.  Note", 
+                "type": "string"
+              }, 
+              "isdefaultset": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "islist": {
+                "default": false, 
+                "type": "boolean"
+              }, 
+              "key": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "prompt": {
+                "default": "", 
+                "type": "string"
+              }
+            }, 
+            "type": "object"
+          }
+        }, 
+        "type": "object"
+      }
+    }, 
+    "required": [
+      "value", 
+      "cliname"
+    ], 
+    "type": "object"
+  }
+}

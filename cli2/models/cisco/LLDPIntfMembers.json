@@ -1,0 +1,11 @@
+{
+  "listattrs": [], 
+  "commands": {
+    "IntfRef": {
+      "cliname": "ethernet"
+    }, 
+    "Enable": {
+      "cliname": "Enable"
+    }
+  }
+}
