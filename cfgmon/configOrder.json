@@ -70,6 +70,7 @@
         "DhcpRelayGlobal",
         "DhcpRelayIntf",
         "VxlanInstance",
-        "VxlanVtepInstances"
+        "VxlanVtepInstances",
+        "DpiRules"
     ]
 }
