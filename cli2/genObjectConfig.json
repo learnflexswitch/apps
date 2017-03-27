@@ -2386,5 +2386,29 @@
   "autoDiscover": false,
   "linkedObjects": null,
   "parent": ""
+ },
+ "DpiRules": {
+  "access": "w",
+  "owner": "sysd",
+  "srcfile": "sysObjects.go",
+  "multiplicity": "*",
+  "accelerated": false,
+  "usesStateDB": false,
+  "autoCreate": true,
+  "autoDiscover": false,
+  "linkedObjects": null,
+  "parent": ""
+ },
+ "DpiRulesState": {
+  "access": "r",
+  "owner": "sysd",
+  "srcfile": "sysObjects.go",
+  "multiplicity": "*",
+  "accelerated": false,
+  "usesStateDB": false,
+  "autoCreate": false,
+  "autoDiscover": false,
+  "linkedObjects": null,
+  "parent": ""
  }
 }
