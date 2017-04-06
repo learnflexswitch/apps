@@ -86,6 +86,9 @@
       "subcmd35": {
         "$ref": "file:/tmp/snaproute/cli/model/cisco/CoppStatState.json"
       }, 
+      "subcmd36": {
+        "$ref": "file:/tmp/snaproute/cli/model/cisco/DpiState.json"
+      },
       "subcmd4": {
         "$ref": "file:/tmp/snaproute/cli/model/cisco/bfdshow.json"
       }, 

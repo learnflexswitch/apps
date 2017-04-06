@@ -1,0 +1,15 @@
+{
+  "dpi": {
+    "cliname": "dpi", 
+    "commands": {
+      "$ref": "file:/tmp/snaproute/cli/model/cisco/DpiSubCmds.json"
+    }, 
+    "help": "Dpi Commands", 
+    "prompt": "dpi", 
+    "value": {
+      "Name": {
+        "cliname": "dpi"
+      }
+    }
+  }
+}
