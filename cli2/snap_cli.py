@@ -35,6 +35,8 @@ import shutil
 import time
 import requests
 import snapcliconst
+import log 
+
 from collections import Counter
 from itertools import izip_longest
 from optparse import OptionParser
@@ -63,15 +65,18 @@ class CmdLine(CommonCmdLine):
        and you want to know what arguments match the input
        (e.g. 'show pr?'.)
     """
+    
     ERROR_RED = '\033[31m'
     ERROR_RED_END = '\033[00m'
     # name of schema and model
     name = 'base.json'
     objname = 'base'
+    log.logger.info(name)
     def __init__(self, switch_ip, model_path, schema_path):
         self.start = True
 
         CommonCmdLine.__init__(self, None, switch_ip, schema_path, model_path, self.name)
+        #log.logger.info("schema_path=", schema_path, "model_path=", model_path)
         self.privilege = False
         self.tmp_remove_priveledge = None
         self.IntfRefToIfIndex = {}
@@ -231,6 +236,7 @@ class CmdLine(CommonCmdLine):
         ports = self.sdk.getAllPorts()
         for port in ports:
             p = port['Object']
+            log.logger.info("p=")
             if p:
                 ifIndex = p['IfIndex']
                 intfRef = p['IntfRef']
@@ -286,8 +292,10 @@ class CmdLine(CommonCmdLine):
                                 if cmdline not in cmdList:
                                     cmdList.append(cmdline)
         for x in cmdList:
+            log.logger.info("cmd=" + x)
             sys.stdout.write("%s\n" %(x))
 
+        #log.logger.info(cmdList)
 
     def replace_cli_name(self, name, newname):
         '''
@@ -340,6 +348,8 @@ class CmdLine(CommonCmdLine):
     def validateSchemaAndModel(self):
 
         def detect_port_prefix(strings):
+            log.logger.info("detect_port_prefix, strings=")
+            #log.logger.info(strings)
             threshold = len(strings)
             prefix = []
             prefixes = []
@@ -355,6 +365,8 @@ class CmdLine(CommonCmdLine):
             if prefix:
                 prefixes.append((''.join(prefix), threshold))
             #print prefixes
+            log.logger.info("prefixes=")
+            #log.logger.info(prefixes)
             #print max([x[1] for x in prefixes])
             maxprefix = [y[0] for y in prefixes if y[1] == max([x[1] for x in prefixes])][0]
             return maxprefix if len(strings) > 1 else maxprefix[:-1]
@@ -383,7 +395,7 @@ class CmdLine(CommonCmdLine):
                         self.replace_cli_name('ethernet', snapcliconst.PORT_NAME_PREFIX)
                     else:
                         sys.stdout.write(self.ERROR_RED + "ERROR: Failed to find ports in system, was DB deleted?\n" + self.ERROR_RED_END)
-                        self.do_exit([])
+                        #self.do_exit([])
                 except jsonref.JsonRefError as e:
                     sys.stdout.write(self.ERROR_RED + "ERROR Failed Model/Schema out of sync: %s\n" %(e.message) + self.ERROR_RED_END)
                 except Exception as e:
@@ -405,6 +417,8 @@ class CmdLine(CommonCmdLine):
         # set the prompt
         self.baseprompt = self.model["prompt-prefix"] + self.model["prompt"]
         self.prompt = self.model["prompt-prefix"] + self.model["prompt"]
+        log.logger.info("setPrompt,self.baseprompt=" + self.baseprompt)
+        log.logger.info("setPrompt,self.prompt=" + self.prompt)
 
     def cmdloop(self, intro=None):
         """
@@ -435,6 +449,11 @@ class CmdLine(CommonCmdLine):
                 self.prompt = self.prompt[:-1] + self.getPrompt(submodel, subschema)
                 self.baseprompt = self.prompt
                 self.currentcmd = self.lastcmd
+                log.logger.info("_cmd_privilege,self.prompt=" + self.prompt)
+
+                log.logger.info("self.baseprompt=" + self.baseprompt)
+                #log.logger.info("self.currentcmd=" + self.currentcmd)
+
     _cmd_privilege.aliases = ["en", "ena"]
 
     # match for schema cmd object
@@ -501,7 +520,7 @@ class CmdLine(CommonCmdLine):
 
     def get_show_complete_commands(self, mline):
         # calling
-
+        log.logger.info("get_show_complete_commands start")
         # special internal cases
         if mline[-1] == "run":
             return ["full"]
@@ -520,6 +539,7 @@ class CmdLine(CommonCmdLine):
                 subcommands = [cmd for (cmd, help, x) in cmds]
                 if subcommands and snapcliconst.COMMAND_DISPLAY_ENTER == subcommands[0]:
                     subcommands += values
+                log.logger.info("get_show_complete_commands, aaa=" + subcommands + specialCmds)
                 return subcommands + specialCmds
         return []
 
@@ -537,6 +557,7 @@ class CmdLine(CommonCmdLine):
     def _cmd_show(self, argv):
         """ Show running system information """
         RUNNING_CONFIG = "running_config"
+        log.logger.info("_cmd_show start")
         newargs = argv
         mline = newargs
         self.cmdtype = snapcliconst.COMMAND_TYPE_SHOW
@@ -547,12 +568,24 @@ class CmdLine(CommonCmdLine):
                     [cmd[:i+1] for i, ch in enumerate(cmd) if i+1 >= 2 and cmd[:i+1] != cmd]).intersection([mline[1]])):
                 self.currentcmd = self.lastcmd
                 # TODO subcmd1 hard coded below is BAD!!!! cause what if schema/model changes then this will not work
+                log.logger.info("_cmd_show start, goto ShowCmd")
+                #log.logger.info(mline)
+
                 c = ShowCmd(self, self.model['commands']['subcmd1'], self.schema['properties']['commands']['properties']['subcmd1'], 0)
+                log.logger.info("_cmd_show, c=")
+                #log.logger.info(c)
+                log.logger.info("goto  c.show(")
                 c.show(mline, all=True)
                 return
             else:
+                log.logger.info("mline[0]")
+                log.logger.info(mline)
                 submodelList = self.getSubCommand(mline[0], self.model["commands"])
+                log.logger.info( "_cmd_show, submodelList:")
+                #log.logger.info(submodelList)
                 subschemaList = self.getSubCommand(mline[0], self.schema["properties"]["commands"]["properties"], self.model["commands"])
+                log.logger.info("_cmd_show,subschemaList:")
+                #log.logger.info(subschemaList)
                 if mlineLength > 0:
                     try:
                         i = 1

@@ -28,6 +28,7 @@ import json
 import pprint
 import inspect
 import jsonref
+import log 
 
 from commonCmdLine import CommonCmdLine
 from cmdEntry import CmdEntry
@@ -897,6 +898,7 @@ class ShowCmd(CommonCmdLine):
         :return:
         """
         showObj = self.getShowObj()
+        log.logger.info("show_state start")
         if showObj and showObj.configList:
             sys.stdout.write("Applying Show:\n")
 
@@ -909,18 +911,29 @@ class ShowCmd(CommonCmdLine):
                 sdk = self.getSdkShow()
                 #funcObjName = config.name + 's' if 'State' in config.name else config.name + 'States'
                 funcObjName = config.name
+                log.logger.info("show_state, funcObjName=" + funcObjName)
                 try:
                     if all:
                         funclower = funcObjName.lower()
+                        log.logger.info("show_state, funclower=" + funclower)
                         if funclower in self.schema and self.schema[funclower]['properties'].has_key('useCombinedPrintFn'):
                             printall_func = getattr(sdk, 'printCombined' + funcObjName + 's')
                         else:
+                            log.logger.info("show_state, printall_func=" + 'print' + funcObjName + 's')
                             printall_func = getattr(sdk, 'print' + funcObjName + 's')
+                            
+                        log.logger.info("show_state, printall_func")
+                        #log.logger.info(printall_func)
+
                         printall_func()
                     else:
-                        # update all the arguments so that the values get set in the get_sdk_...
+                        # update all the arguments so that the values get set in the get_sdk_... 
                         print_func = getattr(sdk, 'print' + funcObjName)
+                        log.logger.info("show_state 2 print_func=" + "print" + funcObjName)
                         data = config.getSdkConfig()
+                        #if funcObjName == 'DpiState' :
+                        #    flexprint.printDpiState(data['Name'])
+                        #else:    
                         (argumentList, kwargs) = self.get_sdk_func_key_values(data, print_func)
                         print_func(*argumentList)
 
