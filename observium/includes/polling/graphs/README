@@ -1,3 +1,0 @@
-Please make sure you use the *new* format of graphing poller. Generate a $graph_defs array to be used in collect_table.
-
-Examples are in NS-ROOT-MIB.

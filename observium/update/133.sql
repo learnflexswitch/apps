@@ -1,1 +1,0 @@
-ALTER TABLE  `munin_plugins_ds` ADD  `mplug_ds_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST ;

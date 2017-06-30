@@ -1,1 +1,0 @@
-ALTER TABLE  `alert_contacts_assoc` CHANGE  `alert_contact_id`  `contact_id` INT( 11 ) NOT NULL ;

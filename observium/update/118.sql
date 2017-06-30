@@ -1,1 +1,0 @@
-ALTER TABLE `entPhysical` CHANGE `entPhysicalHardwareRev` `entPhysicalHardwareRev` VARCHAR(64), CHANGE `entPhysicalFirmwareRev` `entPhysicalFirmwareRev` VARCHAR(255), CHANGE `entPhysicalSoftwareRev` `entPhysicalSoftwareRev` VARCHAR(255);

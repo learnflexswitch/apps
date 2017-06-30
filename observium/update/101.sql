@@ -1,1 +1,0 @@
-ALTER TABLE  `device_graphs` ADD  `device_graph_id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY FIRST;

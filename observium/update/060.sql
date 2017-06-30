@@ -1,1 +1,0 @@
-ALTER TABLE  `vminfo` ADD  `vmwVmUUID` VARCHAR( 32 ) NULL DEFAULT NULL AFTER  `vmwVmState` ,ADD  `vmwVmGuestState` VARCHAR( 16 ) NULL DEFAULT NULL AFTER  `vmwVmUUID` ,ADD  `vmwVmConfigFile` VARCHAR( 128 ) NULL DEFAULT NULL AFTER  `vmwVmGuestState`;
